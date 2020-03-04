@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="">
@@ -13,13 +13,41 @@
   from students about their favorite students and teachers</p>
 
 <form id="survey-form">
-<label for="name">Your Name:</label><br>
-<input type="text" id="name" name="name"><br><br>
-<label for="email">Email:</label><br>
-<input type="email" id="email" name="email"><br><br>
-<label for="number">Standard:</label><br>
-<input type="number" id="number" name="number" min="1" max="10"><br>
+  <label for="name" id="name-label">Your Name:</label><br>
+  <input placeholder="Enter your name" type="text" id="name" name="name"><br><br>
+  <label for="email" id="email-label">Email:</label><br>
 
+  <input placeholder="Enter your email" type="email" id="email" name="email"><br><br>
+  <label for="number" id="number-label">Standard:</label><br>
+  <input placeholder="Enter number" type="number" id="number" name="number" min="1" max="10"><br>
+
+  <label >Choose your gender</label>
+  <select>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="na">Choose not to answer</option>
+  </select><br/>
+  
+  <label >Choose your favorite subject</label> <br/>
+    <input type="radio" name="subject" value="maths"/> Maths<br/>
+    <input type="radio" name="subject" value="english"/> English<br/>
+    <input type="radio" name="subject" value="physics"/> Physics<br/>
+  
+  <label >Choose your favorite teacher</label> <br/>
+    <input type="radio" name="teacher" value="emma"/> Teacher Emma<br/>
+    <input type="radio" name="teacher" value="akshay"/> Teacher Akshay<br/>
+    <input type="radio" name="teacher" value="joel"/> Teacher Joel<br/>
+  
+  <label >Choose your favorite lunch</label> <br/>
+    <input type="checkbox" name="rice" /> Rice<br/>
+    <input type="checkbox" name="chicken" /> Chicken<br/>
+    <input type="checkbox" name="fish" /> Fish<br/>
+
+    <label >Any additional comments</label> <br/>
+    <textarea id="textarea" placeholder="Comments" rows="4" cols="20"></textarea><br/>
+    <input type="submit" id="submit" value="Submit"/><br/>
+
+</form>
 
 </body>
 </html>
