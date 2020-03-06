@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <meta charset="utf-8">
+    <title id="title">Survey Form</title>
+  </head>
+  <body>
+
+<div class="container">
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> This form is used to collect to data
+  from students about their favorite food, subjects and teachers</p>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <label for="number">Number</label>
+      <input type="number" class="form-control" placeholder="Enter number" min="1" max="10">
+    </div>
+    <div class="form-group">
+      <label for="number">Choose your gender</label><br/>
+      <select class="btn btn-secondary" id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="na">Choose not to answer</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sex">Choose your subject</label>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="maths" name="subject">
+        <label class="custom-control-label" for="maths"> Maths</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="english" name="subject" >
+        <label class="custom-control-label" for="english"> English</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="physics" name="subject" >
+        <label class="custom-control-label" for="physics"> Physics</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="sex">Choose your favorite teacher</label>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="emma" name="teacher">
+        <label class="custom-control-label" for="emma"> Teacher Emma</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="akshay" name="teacher" >
+        <label class="custom-control-label" for="akshay"> Teacher Akshay</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="joel" name="teacher" >
+        <label class="custom-control-label" for="joel">Teacher Joel</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="sex">Choose your lunch</label>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="rice">
+        <label class="custom-control-label" for="rice"> Rice</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="chicken">
+        <label class="custom-control-label" for="chicken"> Chicken</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="fish">
+        <label class="custom-control-label" for="fish"> Fish</label>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label for="name" id="name-label">Any additional comments</label>
+      <textarea class="form-control" id="name" placeholder="Enter comments" rows="4" cols="20"></textarea>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Submit" id="submit">
+  </form>
+
+</div>
+
+<script>
+  function onChange() {
+    console.log(12345);
+  }
+</script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</body>
+</html>
